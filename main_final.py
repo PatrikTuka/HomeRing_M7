@@ -65,21 +65,10 @@ while going:
                 CNN_prediction = CNN_model.predict(CNN_image)
                 CNN_predicted_label = np.argmax(CNN_prediction, axis=1)
 
-                print(f"Predicted CNN: {CNN_prediction}")
-
-                if CNN_predicted_label == 0:
-                    print("Label 0 - Speaker")
-                elif CNN_predicted_label == 1:
-                    print("Label 1 - TV")
-                elif CNN_predicted_label == 2:
-                    print("Label 2 - Lamp")
-
             current_sequence.append(current_rpy.copy())
 
         if not current_button_state and previous_button_state:
-
-
-            padded_sequence = create_padding(current_sequence, 66)
+            padded_sequence = create_padding(current_sequence, 54)
 
             padded_sequence = np.array(padded_sequence)
             padded_sequence = np.expand_dims(padded_sequence, axis=0)
@@ -87,19 +76,51 @@ while going:
             NN_prediction = NN_model.predict(padded_sequence)
             NN_predicted_label = np.argmax(NN_prediction, axis=1)
 
-            print(f"Predicted NN: {NN_prediction}")
-            if NN_predicted_label == 0:
-                print("DOWN") # UP
-            elif NN_predicted_label == 1:
-                print("LEFT") # DOWN
-            elif NN_predicted_label == 2:
-                print("LEFT") # LEFT???
-            elif NN_predicted_label == 3:
-                print("UP") # RIGHT
-            elif NN_predicted_label == 4:
-                print("R-LEFT") # R-LEFT
-            elif NN_predicted_label == 5:
-                print("R-RIGHT") # R-RIGHT
+            if CNN_predicted_label == 0:
+                if NN_predicted_label == 0:
+                    print("SPEAKER - DOWN")  # UP
+                elif NN_predicted_label == 1:
+                    print("SPEAKER - LEFT")  # DOWN
+                elif NN_predicted_label == 2:
+                    print("SPEAKER - RIGHT")  # LEFT???
+                elif NN_predicted_label == 3:
+                    print("SPEAKER - UP")  # RIGHT
+                elif NN_predicted_label == 4:
+                    print("SPEAKER - R-LEFT")  # R-LEFT
+                elif NN_predicted_label == 5:
+                    print("SPEAKER - R-RIGHT")  # R-RIGHT
+
+            elif CNN_predicted_label == 1:
+                if NN_predicted_label == 0:
+                    print("TV - DOWN")  # UP
+                elif NN_predicted_label == 1:
+                    print("TV - LEFT")  # DOWN
+                elif NN_predicted_label == 2:
+                    print("TV - RIGHT")  # LEFT???
+                elif NN_predicted_label == 3:
+                    print("TV - UP")  # RIGHT
+                elif NN_predicted_label == 4:
+                    print("TV - R-LEFT")  # R-LEFT
+                elif NN_predicted_label == 5:
+                    print("TV - R-RIGHT")  # R-RIGHT
+
+            elif CNN_predicted_label == 2:
+                if NN_predicted_label == 0:
+                    print("LAMP - DOWN")  # UP
+                elif NN_predicted_label == 1:
+                    print("LAMP - LEFT")  # DOWN
+                elif NN_predicted_label == 2:
+                    print("LAMP - RIGHT")  # LEFT???
+                elif NN_predicted_label == 3:
+                    print("LAMP - UP")  # RIGHT
+                elif NN_predicted_label == 4:
+                    print("LAMP - R-LEFT")  # R-LEFT
+                elif NN_predicted_label == 5:
+                    print("LAMP - R-RIGHT")  # R-RIGHT
+
+
+
+
 
 
         previous_button_state = current_button_state

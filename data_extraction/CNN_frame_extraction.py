@@ -41,4 +41,4 @@ if __name__ == "__main__":
         for file in os.listdir(folder_path):
             video_path = os.path.join(base_dir,folder, file)
             output_dir = os.path.join(base_dir, "split_" + folder)
-            extract_every_n_frame(file.replace('.mov', ''), video_path, output_dir, 5)
+            extract_every_n_frame(file.replace('.mov', ''), video_path, output_dir, 25)

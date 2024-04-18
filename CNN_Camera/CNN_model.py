@@ -6,7 +6,7 @@ from keras.src.callbacks import EarlyStopping
 from matplotlib import pyplot as plt
 
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, precision_score, recall_score, f1_score
 
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 
@@ -52,7 +52,7 @@ model = Sequential([
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
 early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
-model.fit(X_train, y_train, epochs=40, batch_size=32, validation_data=(X_validate, y_validate), callbacks=[early_stopping])
+history = model.fit(X_train, y_train, epochs=20, batch_size=64, validation_data=(X_validate, y_validate), callbacks=[early_stopping])
 
 model.summary()
 evaluation = model.evaluate(X_test, y_test)
@@ -64,4 +64,35 @@ disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=['Left', 'Cent
 disp.plot()
 plt.show()
 
+
+plt.figure(figsize=(10, 5))
+plt.plot(history.history['accuracy'], label='Training Accuracy')
+plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
+plt.title('Training vs. Validation Accuracy')
+plt.xlabel('Epoch')
+plt.ylabel('Accuracy')
+plt.legend()
+plt.show()
+
+def plot_validation_loss(history):
+    loss = history.history['loss']
+    val_loss = history.history['val_loss']
+    x_range = range(1, len(history.epoch) + 1)
+    plt.plot(x_range, loss, 'g.', label='Training loss')
+    plt.plot(x_range, val_loss, 'b', label='Validation loss')
+    plt.title('Training and validation loss')
+    plt.xlabel('Epochs')
+    plt.ylabel('Loss')
+    plt.legend()
+    plt.show()
+
+plot_validation_loss(history)
+
+precision = precision_score(y_test, y_predict, average='macro')
+recall = recall_score(y_test, y_predict, average='macro')
+f1_score = f1_score(y_test, y_predict, average='macro')
+
+print(f"precisions: {precision} - recall: {recall} - f1_score: {f1_score}")
+
 model.save("../Models/CNN_model.h5")
+print("Model Saved")

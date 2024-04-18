@@ -6,7 +6,7 @@ from keras.src.layers import Flatten, Dense, Dropout
 
 from matplotlib import pyplot as plt
 
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, precision_score, recall_score, f1_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
@@ -32,8 +32,8 @@ encoded_labels = np.array(encoded_labels)
 sequences = np.array(sequences)
 
 # 02 - Separating the data_extraction into training - validating - testing sets
-X_train, X_test, y_train, y_test = train_test_split(sequences, encoded_labels, test_size=0.2, random_state=42)
-X_train, X_validate, y_train, y_validate = train_test_split(X_train, y_train, test_size=0.25, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(sequences, encoded_labels, test_size=0.2, random_state=12)
+X_train, X_validate, y_train, y_validate = train_test_split(X_train, y_train, test_size=0.25, random_state=12)
 
 # 03 - Building Architecture
 model = Sequential([
@@ -49,7 +49,7 @@ model = Sequential([
 ])
 
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
-model.fit(X_train, y_train, epochs=300, batch_size=64, validation_data=(X_validate, y_validate))
+history = model.fit(X_train, y_train, epochs=300, batch_size=64, validation_data=(X_validate, y_validate))
 
 
 model.summary()
@@ -75,6 +75,36 @@ plt.ylabel('True Labels')
 plt.title('Confusion Matrix')
 plt.show()
 
+plt.figure(figsize=(10, 5))
+plt.plot(history.history['accuracy'], label='Training Accuracy')
+plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
+plt.title('Training vs. Validation Accuracy')
+plt.xlabel('Epoch')
+plt.ylabel('Accuracy')
+plt.legend()
+plt.show()
+
+def plot_validation_loss(history):
+    loss = history.history['loss']
+    val_loss = history.history['val_loss']
+    x_range = range(1, len(history.epoch) + 1)
+    plt.plot(x_range, loss, 'g.', label='Training loss')
+    plt.plot(x_range, val_loss, 'b', label='Validation loss')
+    plt.title('Training and validation loss')
+    plt.xlabel('Epochs')
+    plt.ylabel('Loss')
+    plt.legend()
+    plt.show()
+
+plot_validation_loss(history)
+
+precision = precision_score(y_test_decoded, y_predict, average='macro')
+recall = recall_score(y_test_decoded, y_predict, average='macro')
+f1_score = f1_score(y_test_decoded, y_predict, average='macro')
+
+print(f"precisions: {precision} - recall: {recall} - f1_score: {f1_score}")
+
 model.save("../Models/NN_model.h5")
+print("Model saved as: NN_model.h5")
 
 
