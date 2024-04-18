@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="15abe734-1c6b-4609-9d5b-8923022a9a61" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/HomeRing4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CNN_Camera/CNN_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CNN_Camera/CNN_preprocessing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CNN_Camera/training_examples/lamp_center.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CNN_Camera/training_examples/lamp_left.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CNN_Camera/training_examples/speaker_center.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CNN_Camera/training_examples/speaker_right.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CNN_Camera/training_examples/tv_left.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CNN_Camera/training_examples/tv_right.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NN_Ring/NN_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NN_Ring/NN_preprocessing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NN_Ring/colour_lookup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NN_Ring/data_collection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NN_Ring/midi_helper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Participant_1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Participant_2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Participant_3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Participant_4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Participant_5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Participant_6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_extraction/CNN_frame_extraction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_final.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2fEcdloP8YnLsSpZOHfrT3vx1ie" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.CNN_frame_extraction.executor": "Run",
+    "Python.CNN_model.executor": "Run",
+    "Python.CNN_preprocessing.executor": "Run",
+    "Python.CNN_preprocessor.executor": "Run",
+    "Python.NN_model.executor": "Run",
+    "Python.NN_preprocessing.executor": "Run",
+    "Python.data_collection.executor": "Run",
+    "Python.frame_extraction.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.main2.executor": "Run",
+    "Python.main_final.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/tukapatrik/PycharmProjects/HomeRing4/NN_Ring/training_data"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/NN_Ring/training_data" />
+      <recent name="$PROJECT_DIR$/NN_Ring" />
+      <recent name="$PROJECT_DIR$/CNN_Camera/training_examples" />
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/NN_Ring/temp" />
+      <recent name="$PROJECT_DIR$/NN_Ring" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/CNN - Camera" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="CNN_preprocessor" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="HomeRing4" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNN - Camera/CNN_preprocessor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="15abe734-1c6b-4609-9d5b-8923022a9a61" name="Changes" comment="" />
+      <created>1713369767795</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713369767795</updated>
+    </task>
+    <servers />
+  </component>
+</project>
