@@ -69,10 +69,9 @@ y_test_decoded = np.array(y_test_decoded)
 # Compute and plot confusion matrix
 cm = confusion_matrix(y_test_decoded, y_predict)
 plt.figure(figsize=(10, 8))
-sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=encoder.classes_, yticklabels=encoder.classes_)
+sns.heatmap(cm, annot=True, fmt='d', cmap='Purples', xticklabels=encoder.classes_, yticklabels=encoder.classes_)
 plt.xlabel('Predicted Labels')
 plt.ylabel('True Labels')
-plt.title('Confusion Matrix')
 plt.show()
 
 plt.figure(figsize=(10, 5))
@@ -84,27 +83,16 @@ plt.ylabel('Accuracy')
 plt.legend()
 plt.show()
 
-def plot_validation_loss(history):
-    loss = history.history['loss']
-    val_loss = history.history['val_loss']
-    x_range = range(1, len(history.epoch) + 1)
-    plt.plot(x_range, loss, 'g.', label='Training loss')
-    plt.plot(x_range, val_loss, 'b', label='Validation loss')
-    plt.title('Training and validation loss')
-    plt.xlabel('Epochs')
-    plt.ylabel('Loss')
-    plt.legend()
-    plt.show()
-
-plot_validation_loss(history)
-
 precision = precision_score(y_test_decoded, y_predict, average='macro')
 recall = recall_score(y_test_decoded, y_predict, average='macro')
 f1_score = f1_score(y_test_decoded, y_predict, average='macro')
 
 print(f"precisions: {precision} - recall: {recall} - f1_score: {f1_score}")
 
+
+"""
 model.save("../Models/NN_model.h5")
 print("Model saved as: NN_model.h5")
+"""
 
 

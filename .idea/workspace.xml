@@ -4,32 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15abe734-1c6b-4609-9d5b-8923022a9a61" name="Changes" comment="safety check">
-      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Anna_1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Anna_2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Anna_3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Anna_4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Anna_5.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Participant_10.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Participant_7.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Participant_8.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Participant_9.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Patrik_1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Patrik_2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Patrik_3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Patrik_4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NN_Ring/training_data/Patrik_5.json" afterDir="false" />
+    <list default="true" id="15abe734-1c6b-4609-9d5b-8923022a9a61" name="Changes" comment="shit works">
+      <change afterPath="$PROJECT_DIR$/visual_assets/album_set/fast_car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/album_set/friends.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/album_set/mamma_mia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/album_set/up_town_funk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/album_set/what_about_us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/album_set/with_or_without_you.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/audio_set/fast_car.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/audio_set/gimme_gimme_gimme.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/audio_set/ill_be_there_for_you.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/audio_set/uptown_funk.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/audio_set/what_about_us.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/audio_set/with_or_without_you.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/movie_set/friends.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/movie_set/full_house.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/movie_set/inception.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/movie_set/maestro_in_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/movie_set/queens_gambit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/movie_set/ready_player_one.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/volume_set/speaker_mute.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/volume_set/speaker_one.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/volume_set/speaker_red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/volume_set/speaker_three.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_assets/volume_set/speaker_two.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visualisation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visualisation_helper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visualisation_with_syphon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visualisation_with_syphon_and_with_music_maybe.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CNN_Camera/CNN_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_Camera/CNN_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NN_Ring/NN_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/NN_Ring/NN_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN_Ring/training_data/Participant_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/NN_Ring/training_data/Participant_1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN_Ring/training_data/Participant_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/NN_Ring/training_data/Participant_2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN_Ring/training_data/Participant_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/NN_Ring/training_data/Participant_3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN_Ring/training_data/Participant_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/NN_Ring/training_data/Participant_4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN_Ring/training_data/Participant_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/NN_Ring/training_data/Participant_5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN_Ring/training_data/Participant_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/NN_Ring/training_data/Participant_6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extraction/CNN_frame_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_extraction/CNN_frame_extraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_final.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_final.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,38 +60,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.CNN_frame_extraction.executor&quot;: &quot;Run&quot;,
-    &quot;Python.CNN_model.executor&quot;: &quot;Run&quot;,
-    &quot;Python.CNN_preprocessing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.CNN_preprocessor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.NN_model.executor&quot;: &quot;Run&quot;,
-    &quot;Python.NN_preprocessing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.data_collection.executor&quot;: &quot;Run&quot;,
-    &quot;Python.frame_extraction.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main_final.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/tukapatrik/PycharmProjects/HomeRing4/NN_Ring/training_data&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.CNN_frame_extraction.executor": "Run",
+    "Python.CNN_model.executor": "Run",
+    "Python.CNN_preprocessing.executor": "Run",
+    "Python.CNN_preprocessor.executor": "Run",
+    "Python.NN_model.executor": "Run",
+    "Python.NN_preprocessing.executor": "Run",
+    "Python.data_collection.executor": "Run",
+    "Python.frame_extraction.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.main2.executor": "Run",
+    "Python.main_final.executor": "Run",
+    "Python.visualisation.executor": "Run",
+    "Python.visualisation_helper.executor": "Run",
+    "Python.visualisation_with_syphon.executor": "Run",
+    "Python.visualisation_with_syphon_and_with_music_maybe.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/tukapatrik/PycharmProjects/HomeRing4/visual_assets/audio_set"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/visual_assets/audio_set" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/NN_Ring/training_data" />
       <recent name="$PROJECT_DIR$/NN_Ring" />
       <recent name="$PROJECT_DIR$/CNN_Camera/training_examples" />
-      <recent name="$PROJECT_DIR$/data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/NN_Ring/training_data" />
-      <recent name="$PROJECT_DIR$/NN_Ring/temp" />
-      <recent name="$PROJECT_DIR$/NN_Ring" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/CNN - Camera" />
+      <recent name="$PROJECT_DIR$/visual_assets/audio_set" />
+      <recent name="$PROJECT_DIR$/visual_assets/movie_set" />
+      <recent name="$PROJECT_DIR$/visual_assets/speaker_albums" />
+      <recent name="$PROJECT_DIR$/visual_assets/speaker_volume" />
+      <recent name="$PROJECT_DIR$/visual_assets" />
     </key>
   </component>
   <component name="RunManager">
@@ -137,11 +147,20 @@
       <option name="project" value="LOCAL" />
       <updated>1713443048940</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="shit works">
+      <option name="closed" value="true" />
+      <created>1713454308639</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713454308639</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="safety check" />
-    <option name="LAST_COMMIT_MESSAGE" value="safety check" />
+    <MESSAGE value="shit works" />
+    <option name="LAST_COMMIT_MESSAGE" value="shit works" />
   </component>
 </project>

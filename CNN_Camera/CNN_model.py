@@ -54,45 +54,33 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
 history = model.fit(X_train, y_train, epochs=20, batch_size=64, validation_data=(X_validate, y_validate), callbacks=[early_stopping])
 
-model.summary()
 evaluation = model.evaluate(X_test, y_test)
 print("Test Accuracy:", evaluation[1])
 
 y_predict = np.argmax(model.predict(X_test), axis=1)
 cm = confusion_matrix(y_test, y_predict)
-disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=['Left', 'Center', 'Right'])
-disp.plot()
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=['Left', 'Center', 'Right'], )
+disp.plot(cmap="Purples")
 plt.show()
 
 
 plt.figure(figsize=(10, 5))
 plt.plot(history.history['accuracy'], label='Training Accuracy')
 plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
-plt.title('Training vs. Validation Accuracy')
+plt.title('CNN - Training vs. Validation Accuracy')
 plt.xlabel('Epoch')
 plt.ylabel('Accuracy')
 plt.legend()
 plt.show()
 
-def plot_validation_loss(history):
-    loss = history.history['loss']
-    val_loss = history.history['val_loss']
-    x_range = range(1, len(history.epoch) + 1)
-    plt.plot(x_range, loss, 'g.', label='Training loss')
-    plt.plot(x_range, val_loss, 'b', label='Validation loss')
-    plt.title('Training and validation loss')
-    plt.xlabel('Epochs')
-    plt.ylabel('Loss')
-    plt.legend()
-    plt.show()
-
-plot_validation_loss(history)
 
 precision = precision_score(y_test, y_predict, average='macro')
 recall = recall_score(y_test, y_predict, average='macro')
 f1_score = f1_score(y_test, y_predict, average='macro')
 
 print(f"precisions: {precision} - recall: {recall} - f1_score: {f1_score}")
-
+"""
 model.save("../Models/CNN_model.h5")
 print("Model Saved")
+"""
+
